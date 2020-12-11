@@ -1,0 +1,10 @@
+.top{
+    height: 80px;
+    width: 100%;
+}
+.top p{
+    float: left;
+}
+.top img{
+    float: left;
+}

@@ -1,0 +1,66 @@
+.lunbo-banner{
+    width: 1200px;
+    margin: 0 auto;
+    height: 630px;
+}
+.lunbo{
+    border: 2px solid #000;
+    position: relative;
+    overflow: hidden;
+}
+.lunbo-ul{
+    position: absolute;
+    top:0;
+    left:50%;
+    margin-left: -960px;
+    li{
+        float: left;
+    }
+}
+.aside{
+    width: 80px;
+    height: 200px;
+    position: fixed;
+    right: 0;
+    top: 200px;
+    background: red;
+}
+.ad-banner{
+    padding-top: 20px;
+    width: 1150px;
+    margin: 0 auto;
+    height: 295px;
+
+    .ad-left{
+        width: 562px;
+        height: 295px;
+        float: left;
+        img{
+            width: 100%;
+        }
+    }
+    .ad-right{
+        width: 562px;
+        height: 295px;
+        float: right;
+        img{
+            width: 100%;
+        }
+    }
+}
+.about-banner{
+    width: 1160px;
+    margin-top: 30px;
+    background: #f9f9f9;
+    // float: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 140px;
+    margin: 0 auto;
+    .phone{
+        float: left;
+    }
+    .footer-logo{
+        float: right;
+    }
+}

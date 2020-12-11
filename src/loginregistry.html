@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>欢迎登录</title>
+    <meta name="keywords" content="TheNorthFace官方商城" />
+    <meta name="description" content="TheNorthFace官方商城" />
+    <link rel='icon' href='https://www.thenorthface.com.cn/favicon.ico' type='image/x-icon' />
+    <link rel="stylesheet" href="style/loginregistry.css">
+</head>
+<body>
+    <div class="top">
+        <img src="https://img2.thenorthface.com.cn/public/images/3b/f1/91/6bdef2c076e3bea65a9b033f8f58c360c0f319d8.jpg?1564465758#w" alt="">
+        <p>欢迎登录</p>
+    </div>
+    <div class="content-layout">
+            <div id="page_signin" class="login-box-warp">
+         <div class="login-box">
+           <div id="loginTabContent" class="tab-content">
+             <div id="account" class="tab-pane fade active in">
+                   <div class="title">
+                     快速登录/注册
+                   </div>
+       
+                   <form action="/index.php/passport-post_login.html" method="post">
+         <ul class="account-input-box">
+           <li class="user-name" style="margin-bottom:20px;position: relative;">
+             <input class="x-input action-account-check" type="text" autocomplete="off" name="uname" id="dom_el_39701d0" value="" placeholder="手机号" vtype="required" data-caution="请填写登录帐号" autofocus="autofocus"></li>
+                 <!-- <li class="user-pwd" style="margin-bottom: 20px;">
+             <input class="x-input" type="password" name="password" id="dom_el_39701d1" placeholder="登录密码" vtype="required" data-caution="请填写密码" oncontextmenu="return false;" onpaste="return false;" /></li> -->
+             <!--
+           <li class="verification clearfix action-verifycode ">
+       
+               <input class="x-input verify-input login-verify-code form-label" type="text" name="verifycode" class="verify-input login-verify-code form-label" placeholder="填写验证码" data-caution="请正确填写验证码" id="dom_el_39701d2" maxlength="4" autocomplete="off" vtype="required&&alphaint" /> <img src="/index.php/index-gen_vcode-b2c-4.html" alt="验证码" title="点击更换验证码" class="verify-code auto-change-verify-handle"> <a href="/index.php/index-gen_vcode-b2c-4.html" class="verify-code auto-change-verify-handle" style="font-size:12px;line-height:36px;" >看不清楚?换一个</a>      </span>
+           </li>-->
+           <li style="margin-bottom:20px;position: relative;overflow: inherit;" class="form-item action-verifycode ">
+               <input class="x-input verify-input login-verify-code" style=" width: 100px; height: 36px; line-height: 36px; outline: none; padding-left: 15px;font-size: 14px;color: #A5A5A5;" type="text" name="verifycode" placeholder="填写验证码" data-caution="请正确填写验证码" id="dom_el_39701d3" maxlength="4" autocomplete="off" vtype="required&amp;&amp;alphaint"> <img src="/index.php/index-gen_vcode-b2c-4.html" alt="验证码" title="点击更换验证码" class="verify-code auto-change-verify-handle"> <a href="/index.php/index-gen_vcode-b2c-4.html" class="verify-code auto-change-verify-handle" style="font-size:12px;line-height:36px;">看不清楚?换一个</a>    </li>
+           <li class="verification clearfix action-need-verify" style="margin-bottom:20px;position: relative;">
+       
+               <input class="x-input pull-left" style=" width: 130px; height: 36px; line-height: 36px; outline: none; padding-left: 15px;font-size: 14px;color: #A5A5A5;" type="text" name="mobileVcode" id="dom_el_39701d4" placeholder="填写验证码"> <a href="/index.php/passport-send_login_sms.html" style="width: 140px;height: 36px;border: 1px solid #ff0000;margin-left: 6px;background: #ffffff;color: #ff0000;outline: none;line-height: 36px;text-align: center;float: right;" class="send-verifi action-get-verifycode"><span><span>获取短信验证码</span></span></a>
+       
+           </li>
+           <li class="remember-box clearfix" style="position: relative;">
+       
+               <span class="remember pull-left">
+                 <input type="checkbox" name="license" id="tongyi" class="x-check" vtype="onerequired" data-caution="请选择同意" checked="checked" style="margin-top:0;">
+                <a style="font-size:12px;" href="https://www.thenorthface.com.cn/index.php/article-kehusuwu-107.html" target="_blank">我同意TheNorthFace®北面官网服务条款</a>
+               </span>
+       
+               <!--  <input type="checkbox" name="site_autologin" id="for_auto_signin" class="x-check action-auto-signin">
+               <label for="for_auto_signin" class="form-sub-label">两周内自动登录</label> -->
+             
+             <!-- <a class="forget pull-right" href="/index.php/passport-lost.html" class="fr">忘记密码？</a> -->
+           </li>
+           <li class="submit-box" style="margin-top: 30px;margin-bottom: 40px;">
+       
+               <!-- <input style="width: 100%; height: 36px; background: #ff0000; color: #ffffff;border: none;outline: none;" type="submit" name="submit" value="立即登录"> -->
+               <!--  -->
+               <button type="submit" class="btn login" rel="_request"><span><span>立即登录</span></span></button>
+             <!-- <a href="/index.php/passport-signup.html" class="btn-passport fr"><span>注册</span></a> -->
+           </li>
+         </ul>
+       </form>
+               </div>
+               <ul id="loginTab" class="nav nav-tabs">
+                               <li class="">
+                                   <a href="/index.php/passport-login.html" data-toggle="tab" data-dom="quick_login" aria-expanded="false">
+                                       快速登录/注册
+                                   </a>
+                               </li>
+                               <li class="">
+                                   <a href="/index.php/passport-login.html?type=common" data-toggle="tab" data-dom="quick_login" aria-expanded="false">
+                                       账号登录
+                                   </a>
+                               </li>
+                               <!-- <li><a href="#social" data-toggle="tab">社交账号登录</a></li> -->
+                               <li class="active"><a href="#account" data-toggle="tab" data-dom="login" aria-expanded="true">账号登录</a></li>
+                               <!-- <li class=""><a href="/index.php/passport-signup.html" data-toggle="tab" data-dom="register" aria-expanded="false">账号注册</a></li> -->
+                           </ul>
+           </div>
+         </div>
+       </div>
+       
+    </div>
+</body>
+</html>

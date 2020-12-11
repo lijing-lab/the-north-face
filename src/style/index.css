@@ -1,0 +1,248 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  width: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  min-width: 1200px;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.top {
+  height: 80px;
+  width: 100%;
+}
+.top .top-left {
+  height: 80px;
+  float: left;
+  width: 80px;
+  position: relative;
+  z-index: 10;
+}
+.top .top-right {
+  height: 80px;
+  background: yellow;
+  float: left;
+  padding-left: 80px;
+  position: absolute;
+  top: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+.top .top-right .shop {
+  float: left;
+  font-size: 12px;
+}
+.top .top-right .exploration {
+  height: 40px;
+  background: black;
+  float: left;
+  width: 100px;
+  color: white;
+}
+.top .top-right .gouwuche {
+  float: right;
+  width: 90px;
+  height: 40px;
+  background: #f7f7f7;
+}
+.top .top-right .language {
+  width: 60px;
+  height: 40px;
+  color: #c7c7c7;
+  float: right;
+}
+.top .top-right .mobile-store {
+  float: right;
+  color: #c7c7c7;
+  width: 75px;
+}
+.top .top-right .store {
+  width: 70px;
+  color: #c7c7c7;
+  float: right;
+}
+.top .top-right .join-vip {
+  width: 150px;
+  color: #c7c7c7;
+  float: right;
+}
+
+.box {
+  width: 1260px;
+  background: black;
+}
+
+.vip {
+  background: black;
+  width: 40px;
+  float: left;
+}
+
+.top-banner {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.less {
+  background: #efefef url(https://img1.thenorthface.com.cn/themes/tnf/images/notice.png) no-repeat 100px 5px;
+  text-align: left;
+  height: 32px;
+  background-size: 23px;
+  padding-left: 100px;
+  line-height: 34px;
+  overflow: hidden;
+}
+.less p {
+  display: inline-block;
+  padding: 0 0 0 30px;
+  margin: 0;
+}
+
+.lunbo-banner {
+  width: 1200px;
+  margin: 0 auto;
+  height: 630px;
+}
+
+.lunbo {
+  border: 2px solid #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.lunbo-ul {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -960px;
+}
+.lunbo-ul li {
+  float: left;
+}
+
+.lunbo-banner {
+  width: 1200px;
+  margin: 0 auto;
+  height: 630px;
+}
+
+.lunbo {
+  border: 2px solid #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.lunbo-ul {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -960px;
+}
+.lunbo-ul li {
+  float: left;
+}
+
+.aside {
+  width: 80px;
+  height: 200px;
+  position: fixed;
+  right: 0;
+  top: 200px;
+  background: red;
+}
+
+.ad-banner {
+  padding-top: 20px;
+  width: 1150px;
+  margin: 0 auto;
+  height: 295px;
+}
+.ad-banner .ad-left {
+  width: 562px;
+  height: 295px;
+  float: left;
+}
+.ad-banner .ad-left img {
+  width: 100%;
+}
+.ad-banner .ad-right {
+  width: 562px;
+  height: 295px;
+  float: right;
+}
+.ad-banner .ad-right img {
+  width: 100%;
+}
+
+.about-banner {
+  width: 1160px;
+  margin-top: 30px;
+  background: #f9f9f9;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 140px;
+  margin: 0 auto;
+}
+.about-banner .phone {
+  float: left;
+}
+.about-banner .footer-logo {
+  float: right;
+}
+
+.footer {
+  width: 100%;
+  background: black;
+}
+
+.footer-banner {
+  height: 420px;
+}
+
+/*# sourceMappingURL=index.css.map */
