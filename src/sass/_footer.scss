@@ -1,8 +1,45 @@
 .footer{
     width: 100%;
     background: black;
+    li{
+        margin: 5px 0;
+    }
 
 }
 .footer-banner{
     height: 420px;
+}
+.footer-c{
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 60px;
+    color: #707070;
+}
+.footer-t {
+    display: -webkit-flex;
+    display: -moz-flex;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #373737;
+}
+.t-left {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    width: 70%;
+    color: #707070;
+}
+.t-left ul {
+    width: 20%;
+}
+.t-left ul .tis {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.footer-d {
+    font-size: 12px;
+}
+.footer a{
+    color: #767676;
+    text-decoration: none;
+    font-size: 12px;
 }

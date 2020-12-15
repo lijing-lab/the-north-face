@@ -8,3 +8,20 @@
 .top img{
     float: left;
 }
+form{
+    width: 500px;
+    position: absolute;
+    right: 100px;
+    top: 200px;
+}
+/* .login-box{
+    padding: 35px 60px;
+}
+.title{
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+.account-input-box{
+    margin-top: 35px;
+} */

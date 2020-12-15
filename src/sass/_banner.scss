@@ -1,36 +1,90 @@
-.lunbo-banner{
-    width: 1200px;
-    margin: 0 auto;
-    height: 630px;
-}
 .lunbo{
-    border: 2px solid #000;
     position: relative;
     overflow: hidden;
-}
-.lunbo-ul{
-    position: absolute;
-    top:0;
-    left:50%;
-    margin-left: -960px;
-    li{
-        float: left;
+    .lunbo-banner{
+        width: 1920px;
+        position: relative;
+        left:50%;
+        margin-left: -960px;
+        height: 630px;
+        overflow: hidden;
+        .lunbo-ul{
+            position: absolute;
+            top:0;
+            left:0;
+            width: 1920px;
+            margin-left: -960px;       
+            height: 630px;
+            overflow: hidden;
+            margin:0 auto;
+            li{
+                float: left;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .lunbo-ol{
+            position: absolute;
+            top: 500px;
+            left: 940px;
+            li{
+                float: left;
+                margin-right: 20px;
+                width: 10px;
+                height: 10px;
+                color: transparent;
+                border-radius: 50%;
+                border: 1px solid #222;
+                cursor: pointer;
+            }
+        }
+        .left{
+            position: absolute;
+            top: 300px;
+            left: 330px;
+            font-size:80px;
+            color: rgb(224, 221, 221);
+            text-decoration: none;
+        }
+        .right{
+            position: absolute;
+            top: 300px;
+            right: 330px;
+            font-size: 80px;
+            text-decoration: none;
+            color: rgb(224, 221, 221);            
+        }
     }
 }
+
 .aside{
-    width: 80px;
-    height: 200px;
     position: fixed;
+    top: 50%;
     right: 0;
-    top: 200px;
-    background: red;
+    width: 60px;
+    height: auto;
+    z-index: 9;
+    margin-top: -5%;
+    background: #222;
+    .suves{
+        margin: 5px 0 0 5px;
+    }
+    .wechat{
+        margin: 5px 0 0 5px;
+    }
+    .yelian{
+    width: 60px;
+    height: 60px;
+    margin: 7px 0 0 0;
+    }
 }
+
 .ad-banner{
     padding-top: 20px;
     width: 1150px;
     margin: 0 auto;
     height: 295px;
-
     .ad-left{
         width: 562px;
         height: 295px;
@@ -48,19 +102,185 @@
         }
     }
 }
+.tab-banner{
+    width: 1200px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #787878;
+    margin: 0 auto;
+    .boy-clo{
+        float: left;
+        margin: 10px 0 0 500px;
+        color: #222;
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+            color: rgb(65, 65, 226);
+        }
+    }
+    .girl-clo{
+        float: right;
+        margin: 10px 500px 0 0;
+        color: #222;
+        &:hover{
+            color: rgb(65, 65, 226);
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}
+
+.tab{
+    height: 600px;
+    .boylist li{
+        float: left;
+        width: 275px;
+        height: 527px;
+        margin-right: 10px;
+        margin-left: 13px;
+        img{
+            width: 100%;
+        }
+    }
+    .girllist li{
+        float: left;
+        width: 275px;
+        height: 527px;
+        margin-right: 10px;
+        margin-left: 13px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.about{
+    background: #f9f9f9;
+
+}
 .about-banner{
     width: 1160px;
     margin-top: 30px;
-    background: #f9f9f9;
-    // float: left;
     padding-top: 50px;
     padding-bottom: 50px;
     height: 140px;
     margin: 0 auto;
     .phone{
         float: left;
+        margin-left: 200px;
     }
     .footer-logo{
         float: right;
+        margin-right: 200px;
     }
+}
+.t-rigth {
+    width: 30%;
+}
+.t-left ul {
+    width: 20%;
+}
+.footer-ewm .t {
+    font-size: 12px;
+    margin: 10px 0 0;
+}
+.footer-ewm img {
+    width: 100%;
+}
+.footer-ewm div {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.active{
+    background: #fff;
+}
+.item{
+    display: none;
+}
+.show{
+    display: block;
+}
+.sale-banner{
+    height: 500px;
+    width: 1080px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    .goodthings{
+        top: 100px;
+        font-size: 20px;
+        font-weight: bolder;
+        margin: 40px 0 50px 490px;
+    }
+    ul{
+        float: left;
+        li{
+            float: left;
+            border: 1px solid #999;
+            height: 318px;
+            padding: 10px;
+            margin: 5px;
+            img{
+                width: 238px;
+                height: 238px;
+            }
+        }
+    }
+}
+.sale-lunbo{
+    position: absolute;
+}
+.saleol{
+    position: absolute;
+    top: 470px;
+    left: 520px;
+    li{
+        border: 1px solid #000;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        float: left;
+        margin-right: 12px;
+
+    }
+}
+.active1{
+    background: #000;
+}
+.sale{
+    height: 500px;
+    position: relative;
+}
+
+.sale-left{
+    position: absolute;
+    top:280px;
+    left: 80px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #787878;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #999;
+
+}
+.sale-right{
+    position: absolute;
+    top:280px;
+    font-size: 30px;
+    right: 80px;
+    color: #787878;
+    text-decoration: none;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #999;
+
 }
