@@ -9,6 +9,14 @@ define([],function(){
             const $rightarrow = $('.right');
             let timer = null;
             let $num = 0; 
+
+
+            var $mask = $('#mask-big'); 
+            var $login = $('.loginit'); 
+            var $closeBtn = $('.close-btn'); 
+
+
+
             const $liwidth = $piclist.eq(0).width(); //1个li的宽度
             $ulist.width($liwidth * $piclist.size());
             
@@ -64,7 +72,7 @@ define([],function(){
             // 渲染男装
             const $clolist = $('.boylist');
             $.ajax({
-                url: 'http://localhost/the-north-face/php/indexdata.php',
+                url: 'http://10.31.161.52/the-north-face/php/indexdata.php',
                 dataType: 'json'
             }).done(function(data) {
                 let $strhtml = '';
@@ -75,8 +83,8 @@ define([],function(){
                     $strhtml += `
                         <li style="position:relative">
                             <img index="${index}" class="lazy" src="${value.url}" />
-                            <div style="position:absolute,left:0,top:0">
-                            <p class="look" style="display:none">查看搭配</p></div>
+                            <div class="mask" style="diaplay:none,position:absolute,left:0,top:0">
+                            <p class="look" style="">查看搭配</p></div>
                         </li>
                     `;}
                 });
@@ -84,14 +92,12 @@ define([],function(){
                 $clolist.html($strhtml);                      
             })
 
-            // $('.look').on('click',function(){
-            //     console.log(10000000);
-            // });
+            
             
             // 渲染女装
             const $clolist1 = $('.girllist');
             $.ajax({
-                url: 'http://localhost/the-north-face/php/indexdata.php',
+                url: 'http://10.31.161.52/the-north-face/php/indexdata.php',
                 dataType: 'json'
             }).done(function(data) {
                 let $strhtml1 = '';
@@ -100,10 +106,11 @@ define([],function(){
                     if(index>=4){
                         console.log(index);
                     $strhtml1 += `
-                        <li class="boxli" style="position:relative">
-                            <img class="lazy" src="${value.url}" />
-                            <div style="position:absolute,left:0,top:0">
-                            <p class="look" style="display:none">查看搭配</p></div>
+                       
+                        <li style="position:relative">
+                            <img index="${index}" class="lazy" src="${value.url}" />
+                            <div class="mask" style="diaplay:none,position:absolute,left:0,top:0">
+                            <p class="look" style="">查看搭配</p></div>
                         </li>
                     `;
                     }
@@ -128,80 +135,33 @@ define([],function(){
             }); 
  
 
-            // var oUl=document.querySelector('.boylist');
-            // // console.log(oUl);
-            // var mask=document.createElement('div');
-            // mask.className='mask';
-            // var index=null;
-            // var list=null;
-            // oUl.addEventListener('mouseover',function(e){
-            //     var e=e||window.event;
-            //     if(e.target.nodeName==='IMG'){
-            //         // alert(e.target);
-            //         index=e.target.getAttribute('index');
-            //         // alert(index);
-            //         list=this.children;
-            //         list[index].appendChild(mask);
-            //         this.addEventListener('mouseout',function(e){
-            //         if(e.target.nodeName==='LI'){
-            //             list[index].removeChild(mask);
-            //         }    
-            //     },false);
-            //     }               
-            // },false);
-            // oUl.addEventListener('mouseout',function(e){
-            //     if(e.target.nodeName==='IMG'){
-            //         list[index].removeChild(mask);
-            //     }    
-            // },false);
-
-
-
 
             var $oul=$('.boylist');
+            console.log($login);
             $oul.on('mouseover','li',function(){
                 var $index=$(this).index();
+                console.log($index);
                 console.log($(this));
-                $oul.find('li').eq($index).find('div').addClass('mask').siblings().removeClass('mask');
-                $oul.find('li').eq($index).find('div').find('p').css({
-                    "display":"block"
-                });
                 const $pdapei=$oul.find('li').eq($index).find('div').find('p');
                 $pdapei.on('click',function(){
-                    alert(111);
+                    $mask.css({
+                        "display":"block"
+                    })
+                    $login.eq($index).css({
+                        "display":"block",
+                        })
+                    })
+                });
+                $closeBtn.on('click', function() {
+                    $mask.css({
+                        "display":"none"
+                    })
+                    $login.css({
+                        "display":"none",
+                    })
                 })
-            });
-            $oul.on('mouseout','li',function(){
-                var $index=$(this).index();
-                console.log($(this));
-                $oul.find('li').eq($index).find('div').removeClass('mask');
-                $oul.find('li').eq($index).find('div').find('p').css({
-                    "display":"none"
-                });
-            });
 
-            var $oulgirl=$('.girllist');
-            $oulgirl.on('mouseover','.boxli',function(){
-                var $index1=$(this).index();              
-                $oulgirl.find('.boxli').eq($index1).find('div').addClass('mask').siblings().removeClass('mask');
-                $oulgirl.find('.boxli').eq($index1).find('div').find('p').css({
-                    "display":"block"
-                });
-                const $pdapei1=$oulgirl.find('.boxli').eq($index1).find('div').find('p');
-                $pdapei1.on('click',function(){
-                    console.log(1);
-                })
-            });
-            $oulgirl.on('mouseout','.boxli',function(){
-                var $index1=$(this).index();
-                $oulgirl.find('.boxli').eq($index1).find('div').removeClass('mask');
-                $oulgirl.find('.boxli').eq($index1).find('div').find('p').css({
-                    "display":"none"
-                });
-            });
-
-
-
+          
 
             // 最佳销售单品
             const $saleLunbo=$('.sale-lunbo');
@@ -241,7 +201,6 @@ define([],function(){
                     $salediv.css('left',0)
                     $number=1;
                 }
-
                 if($number===-1){
                     $salediv.css('left',-$divwidth*$salebtn.size());
                     $number=$salebtn.size()-1;
@@ -251,7 +210,6 @@ define([],function(){
                 }else{
                     $salebtn.eq($number).addClass('active1').siblings('li').removeClass('active1');
                 }
-
                 $salediv.stop(true).animate({
                     left:-$divwidth*$number
                 });
@@ -259,6 +217,9 @@ define([],function(){
             timer1=setInterval(function(){
                 $rightsale.click();
             },3000);
+
+
+            
 
 
             // 回到顶部
