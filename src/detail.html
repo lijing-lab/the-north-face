@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>详情页</title>
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/detail.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="detail_module"></script>
     
 </head>
 <body>
 <!-- 顶部 -->
-<div class="top">
+    <div class="top">
         <div class="top-banner">
         <!-- 左侧logo -->
         <div class="top-left">
@@ -18,15 +20,11 @@
                 <img class="logo-img" src="https://img2.thenorthface.com.cn/public/images/3b/f1/91/6bdef2c076e3bea65a9b033f8f58c360c0f319d8.jpg?1564465758#w" alt="">
             </a>
         </div>
-        <!-- 左侧logo -->
 
         <div class="top-right">
             <div class="top-login">
-                <!--  -->
                 <div class="shop"><a href="">官方商城Shop</a></div>
-                <div class="box">
                     <div class="exploration">探索北面Exploration</div>
-                </div>
                 <div class="vip"><a href=""><span>VIP</span>eak</a></div>
                 <div class="gouwuche">
                     <a href="http://localhost/the-north-face/src/cart.html" target="_blank">
@@ -88,6 +86,42 @@
     <!-- 满减 -->
     <div class="less">
         <p>★官网商城购物订单满300元，即可享快递免费运送到家。</p>
+    </div>
+
+
+    <div class="goodsinfo">
+        <div class="intobox">
+            <a href="cart.html" target="_blank">进入购物车</a>
+        </div>
+        <div class="wrap">
+            <div id="spic">
+                <img src="" alt="" id="smallpic">
+                <div id="sf"></div>
+            </div>
+            <div id="bf">
+                <img src="" alt="" id="bpic">
+            </div>
+            <div id="ulist">
+                <a href="javascript:;" id="left">&lt;</a>
+                <div id="list">
+                    <ul>
+                        <!-- 渲染放大镜下面的小图 -->
+                    </ul>
+                </div>
+                <a href="javascript:;" id="right">&gt;</a>
+            </div>
+        </div>
+        <div class="goodsinfo-word">
+            <div class="p-name">
+                <a class="loadtitle" href="##"></a>
+            </div>
+            <div class="p-price"><strong><em>￥</em><i class="loadpcp"></i></strong></div>
+            <div class="p-btn">
+                <input type="text" id="count" value="1" />
+                <a href="javascript:;">加入购物车</a>
+                <!-- void(0) -->
+            </div>
+        </div>
     </div>
 </body>
 </html>

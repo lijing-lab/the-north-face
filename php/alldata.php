@@ -6,11 +6,14 @@ define('USERNAME','root');//用户名
 define('PASSWORD','root');//密码
 define('DBNAME','taobao');//数据库名
 $conn = @new mysqli(HOST,USERNAME,PASSWORD,DBNAME);
+$result = $conn->query("select * from taobaogoods"); //获取数据的结果集(记录集)
 
-if(isset($_GET['sid'])){
-    $sid = $_GET['sid'];
-    //查询这条数据返回给前端。
-    $result=$conn->query("select * from taobaogoods where sid = $sid");//获取一条数据。
-    echo json_encode($result->fetch_assoc());
+$arr = array();
+for ($i = 0; $i < $result->num_rows; $i++) {
+    $arr[$i] = $result->fetch_assoc();
 }
+
+echo json_encode($arr);
+
+
 

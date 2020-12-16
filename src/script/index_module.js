@@ -136,8 +136,8 @@ define([],function(){
             // var list=null;
             // oUl.addEventListener('mouseover',function(e){
             //     var e=e||window.event;
-            //     if(e.target.nodeName==='LI'){
-            //         alert(e.target);
+            //     if(e.target.nodeName==='IMG'){
+            //         // alert(e.target);
             //         index=e.target.getAttribute('index');
             //         // alert(index);
             //         list=this.children;
@@ -146,9 +146,14 @@ define([],function(){
             //         if(e.target.nodeName==='LI'){
             //             list[index].removeChild(mask);
             //         }    
-            //     },true);
+            //     },false);
             //     }               
-            // },true);
+            // },false);
+            // oUl.addEventListener('mouseout',function(e){
+            //     if(e.target.nodeName==='IMG'){
+            //         list[index].removeChild(mask);
+            //     }    
+            // },false);
 
 
 
@@ -163,7 +168,6 @@ define([],function(){
                 });
                 const $pdapei=$oul.find('li').eq($index).find('div').find('p');
                 $pdapei.on('click',function(){
-                    // console.log(1);
                     alert(111);
                 })
             });
@@ -195,6 +199,10 @@ define([],function(){
                     "display":"none"
                 });
             });
+
+
+
+
             // 最佳销售单品
             const $saleLunbo=$('.sale-lunbo');
             const $salediv=$('.sale-banner div');

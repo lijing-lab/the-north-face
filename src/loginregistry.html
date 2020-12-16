@@ -9,22 +9,28 @@
     <meta name="description" content="TheNorthFace官方商城" />
     <link rel='icon' href='https://www.thenorthface.com.cn/favicon.ico' type='image/x-icon' />
     <link rel="stylesheet" href="style/loginregistry.css">
-    <link rel="stylesheet" href="style/index.css">
     <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="loginregistry_module"></script>
 </head>
 <body>
     <div class="top">
-        <img src="https://img2.thenorthface.com.cn/public/images/3b/f1/91/6bdef2c076e3bea65a9b033f8f58c360c0f319d8.jpg?1564465758#w" alt="">
-        <p>欢迎登录</p>
+            <img src="https://img2.thenorthface.com.cn/public/images/3b/f1/91/6bdef2c076e3bea65a9b033f8f58c360c0f319d8.jpg?1564465758#w" alt="">
+            <p>欢迎登录</p>
     </div>
-    <fieldset style="width:500px;margin:0 auto;">
-            <legend>用户注册</legend>
-            <form action="http://localhost/the-north-face/php/loginregistry.php" method="post" id="registry">
+    <div class="content">
+        <div class="login">
+            <p class="title">快速注册/登录</p>
+            <form action="http://10.31.161.52/the-north-face/php/loginregistry.php" method="post" id="registry">
                 <p><label for="">用户名：</label><input type="text" name="username" id="username"><span id="span1"></span></p>
                 <p><label for="">密　码：</label><input type="password" name="password" id="password"><span></span></p>
                 <p><label for="">邮　箱：</label><input type="text" name="email" id="email"><span></span></p>
                 <p><input type="submit" value="提交注册" name="submit" id="submit"></p>
             </form>
-        </fieldset>        
+        </div>
+    </div>
+    <div class="footer-banner">
+        <div class="login-footer footer">
+            COPYRIGHT BY www.thenorthface.com.cn , ALL RIGHTS RESERVED . 威富服饰（中国）有限公司上海分公司 沪ICP备08104484号-6 沪公网安备 31010602000021号
+        </div>
+    </div>
 </body>
 </html>

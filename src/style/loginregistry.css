@@ -1,27 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .top{
     height: 80px;
     width: 100%;
+    background: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 .top p{
     float: left;
+    font-size: 28px;
+    color: #000000;
+    margin-left: 32px;
+    margin-top: 20px;
 }
 .top img{
     float: left;
 }
-form{
-    width: 500px;
+.content {
+    width: 1349px;
+    margin: 0px auto;
+    height: 505px;
+    background: url(https://img3.thenorthface.com.cn/themes/tnf/images/reg.jpg) no-repeat center;
+    position: relative;
+}
+.login{
+    width: 400px;
     position: absolute;
-    right: 100px;
-    top: 200px;
+    background: #ffffff;
+    top: 65px;
+    right: 80px;
+    height: 440px;
+    z-index: 30;
 }
-/* .login-box{
-    padding: 35px 60px;
+.footer-banner{
+    background: #000000;
+    width: 100%;
 }
-.title{
+.footer {
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 30px;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+ .footer {
+    margin: 0 auto;
+    height: 43px;
+    line-height: 43px;
+    background: #000000;
+    text-align: center;
+    color: #707070;
+}
+.login-footer .footer {
+    position: fixed;
+    bottom: 0;
+    line-height: 10px;
+}
+.title {
     color: #000000;
     font-size: 20px;
     font-weight: bold;
+    margin: 40px 0 0 55px;
 }
-.account-input-box{
-    margin-top: 35px;
-} */
